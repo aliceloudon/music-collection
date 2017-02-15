@@ -2,7 +2,7 @@ require('pry-byebug')
 require_relative('./models/album.rb')
 require_relative('./models/artist.rb')
 
-# Album.delete_all
+Album.delete_all
 Artist.delete_all
 
 artist1 = Artist.new({ 'name' => 'Bananarama' })
@@ -17,9 +17,13 @@ album1 = Album.new({
   'title' => 'Deep Sea Skiving',
   'genre' => 'New wave',
   'artist_id' => artist1.id })
+album2 = Album.new({
+  'title' => 'Bananarama',
+  'genre' => 'Pop',
+  'artist_id' => artist1.id })
 
 album1.save
-# album2.save
+album2.save
 # album3.save
 
 binding.pry
