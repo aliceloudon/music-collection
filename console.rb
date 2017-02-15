@@ -21,10 +21,14 @@ album2 = Album.new({
   'title' => 'Bananarama',
   'genre' => 'Pop',
   'artist_id' => artist1.id })
+album3 = Album.new({
+  'title' => 'True Confessions',
+  'genre' => 'Dance pop and disco',
+  'artist_id' => artist1.id })
 
 album1.save
 album2.save
-# album3.save
+album3.save
 
 binding.pry
 nil
