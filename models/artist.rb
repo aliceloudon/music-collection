@@ -1,9 +1,10 @@
-require_relative ('album.rb')
-require_relative ('../db/sql_runner.rb')
+require_relative('album.rb')
+require_relative('../db/sql_runner.rb')
 
 
 class Artist
-
+  attr_reader :id
+  attr_accessor :name
   def initialize(options)
     @name = options['name']
     @id = options['id'].to_i if options['id']

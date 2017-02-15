@@ -13,12 +13,12 @@ artist1.save
 artist2.save
 artist3.save
 
-# album1 = Album.new({
-#   'title' => '',
-#   'genre' => '',
-#   'artist_id' => artist1.id })
+album1 = Album.new({
+  'title' => 'Deep Sea Skiving',
+  'genre' => 'New wave',
+  'artist_id' => artist1.id })
 
-# album1.save
+album1.save
 # album2.save
 # album3.save
 
